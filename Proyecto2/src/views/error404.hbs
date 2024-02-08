@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/Formu.css">
+<navbar>
+            <div class="navlist">
+                <div class="mylist">
+                    <ul class="list">
+                        <li><a class="anim1" href="#" onclick="INICIO()">Iniciar Sesion</a></li>
+                        <li></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </navbar>
+<body>
+    <div class="contenedor-imagen">
+        <img src="css/tite.jpg" alt="osomalo">
+    </div>
+    <p><div class="contenedor-texto">
+        {{titulo}}
+        
+        </div>
+    </p>
+    <p><div class="contenedor-texto"> {{descripcion}}</div></p>
+    <p><div><button class="boton" type="button" id="btnR1" class="btnsel"onclick="goBack()">
+        <script>
+            function goBack(){
+                window.history.back();
+            }
+        </script>{{boton}}</button> </div></p>
+</body>
+    
+    <script src="/js/Formu.js"></script>

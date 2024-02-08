@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/css/Formu.css">
+<h1 id="title-table" class="coltxt13">{{title}}</h1>
+<navbar>
+    <div class="navlist">
+        <div class="mylist">
+            <ul class="list">
+                <li><a class="anim1" href="#" onclick="MENU()">Menu eleccion</a></li>
+                <li><a class="anim1" href="#" onclick="REGISTRA()">Registrar Usuario</a></li>
+                <li><a class="anim1" href="#" onclick="CIERRA()">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </div>
+</navbar>
+<div class="table-containerbb">
+<table class="cool-table" id="tabla">
+    <tr class="coltxt">
+            <td>Nombre</td>
+            <td>Correo</td>
+            <td>Acciones</td>
+    </tr>
+    {{#each list}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{email}}</td>
+            <td>
+<!--<form action="/eliminar/{{name}}" method="POST">
+  <button type="submit" class="button">Eliminar</button>
+</form>-->
+                <a href="/eliminar?username={{name}}" class="anim1" class="button">Eliminar</a>
+                <a href="/editar?username={{name}}" class="anim1" class="button">Editar</a>
+            </td>
+        </tr>
+    {{/each}}
+</table>
+</div>
+<script src="/js/Formu.js"></script>
+
+
+               

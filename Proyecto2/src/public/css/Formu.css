@@ -1,0 +1,551 @@
+/* Estilos del cuerpo y fondo */
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 1fr;
+    height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .contenedor-texto{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 30px;
+    color: #fafafa;
+    font-weight: bold;
+  }
+  .marg1{
+    margin-top: 0px;
+  }
+  .imgcar{
+    height: 30px;
+    width: 30px;
+  }
+  .imgcar:hover{
+      background-color: #2d35d1; /* Cambia el color de fondo al pasar el cursor */
+          transform: scale(1.5); /* Escala el contenedor al 110% del tamaño original */
+          transition: left 0.3s;
+       
+  }
+  .imgcar2{
+    height: 50px;
+    width: 200px;
+    align-items: center;
+    align-self:center ;
+  }
+  p{
+    font-size: 18px;
+    color: #00ff5e;
+    font-weight: bold;
+  }
+  .contenedor-imagen{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  img{
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(251, 247, 247, 0.388);
+  }
+  .space{
+    margin-bottom: 55%;
+  }
+  navbar{
+    text-align: justify;
+    align-self: center;
+    grid-column: 30px;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 80px;
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+  }
+  .imhe{
+    width: 100%;
+    height: 100px;
+    margin-left: 40%;
+    margin-top: 0;
+    margin-bottom: 90%;
+  }
+  /* Estilos del encabezado y navegación */
+  header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 90px;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: rgb(44, 5, 54);
+  }
+  
+  .navlist {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    text-decoration: solid;
+    color: rgba(255, 255, 255, 0.76);
+  }
+  
+  .mylist {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 250px;
+  }
+  
+  .list li {
+    display: inline-flex;
+    display: inline-block;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .list li a {
+    font-size: 25px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: solid;
+  }
+  
+  /* Estilos del contenido principal */
+  #main {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px gray;
+    width: 100%;
+    height: auto;
+    margin: 35px auto;
+    display: flex;
+    margin-bottom: 0px;
+  }
+  
+  .flex-box {
+    width: 1250px;
+    height: auto;
+    margin: 0 auto;
+    margin: 2px;
+  }
+  
+  /* Estilos de los elementos dentro de los formularios */
+  .form-title {
+    text-align: center;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(251, 247, 247, 0.388);
+    border: 1px solid #a68d8d;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    display: block;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="password"],
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .coltxt{
+    margin-top: 0px;
+    margin-left: 30%;
+    color: #fafafa;
+  }
+  .coltxt1{
+    text-align: center;
+    color: #fafafa;
+  }
+  .coltxt11{
+    text-align: center;
+    color: #fafafa;
+    text-decoration-color: black;
+  }
+  .coltxt13{
+    margin-top: 0px;
+    margin-left: 15%;
+    color: #fafafa;
+  }
+
+
+  .table-containerbb {
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  .cool-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #d0abab;
+    box-shadow: 0 0 10px rgba(151, 31, 31, 0.405);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .cool-table th, .cool-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #aa6868;
+  }
+  
+  .cool-table th {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .cool-table tbody tr:hover {
+    background-color: #b89999;
+  }
+
+  
+  .tabb{
+
+  }
+  .marv1{
+    margin-bottom: 0px;
+    margin-left: 30px;
+  }
+  .t11{
+    margin-bottom: 20%;
+  }
+  .marg15{
+    background-color: #bc2e2e;
+    width: 250px;
+    height: 350px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+  }
+  .btnsel{
+
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    color: #5c9ac4c3;
+    overflow: hidden;
+    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+
+    border-color:rgb(255, 255, 255);
+    border-style: solid;
+    margin-left: 20%;
+    margin-bottom: 40%;
+    align-items: center;
+    width: 20%;
+    padding: 10px;
+    background-color: rgb(125, 124, 195);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+  .btnsel:hover {
+    color: #fff;
+    background-color: #db3f34;
+  }
+
+  /* Efecto de animación cuando el cursor está sobre el botón */
+  .btnsel::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(45deg, #c71717, #fff);
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.3s;
+    z-index: -1;
+  }
+
+  .btnsel:hover::before {
+    left: 100%;
+  }
+  .btnsel1{
+    color: black;
+    text-decoration: solid;
+    margin-left: 20%;
+    margin-bottom: 40%;
+    align-items: center;
+    width: 70%;
+    padding: 10px;
+    background-color: rgb(228, 32, 32);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    color: #3498db;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  .boton:hover {
+    color: #fff;
+    background-color: #3498db;
+  }
+
+  /* Efecto de animación cuando el cursor está sobre el botón */
+  .boton::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(45deg, #3498db, #fff);
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.3s;
+    z-index: -1;
+  }
+
+  .boton:hover::before {
+    left: 100%;
+  }
+
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(7, 5, 128);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  form .link-container {
+    margin-left: 550px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  form .link-container a {
+    margin-left: 550px;
+    text-decoration: none;
+    color: #160075;
+  }
+  
+  form .link-container a:hover {
+    margin-left: 550px;
+  }
+  .anim1 {
+    font-size: 24px;
+    color: #fffdfd;
+    transition: color 0.3s, transform 0.3s;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  /* Efecto de animación cuando el cursor está sobre el texto */
+  .anim1:hover {
+    color: #e74c3c; /* Cambia el color del texto al pasar el cursor */
+    transform: scale(1.2); /* Escala el texto al 120% del tamaño original */
+  }
+
+  .contenedor22 {
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+    height: 40vh; /* Ocupa el 20% de la altura de la ventana */
+    overflow: hidden; /* Oculta el contenido que pueda desbordar */
+    position:absolute;
+    margin: 0;
+      padding: 0;
+      overflow: hidden;
+    margin-top: 0;
+  }
+
+  /* Estilo de la imagen */
+  .contenedor22 img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    display: block;
+  }
+  .contenedor33 {
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+    height: 60vh; /* Ocupa el 20% de la altura de la ventana */
+    overflow: hidden; /* Oculta el contenido que pueda desbordar */
+    position:absolute;
+    margin: 0;
+      padding: 0;
+      overflow: hidden;
+    margin-top: 20%;
+  }
+
+  /* Estilo de la imagen */
+  .contenedor33 img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    display: block;
+  }
+  #tabla {
+    text-decoration-color: azure;
+    margin-left: 550px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid rgb(49, 49, 49);
+    width: 500px;
+    height: 500px;
+    background-color: rgba(251, 247, 247, 0.388);
+    backdrop-filter: blur(2px);
+    box-shadow: 2px 5px 15px rgb(255, 255, 255);
+    text-align: center;
+  }
+  
+  
+  /* Estilo responsive para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .mylist {
+        margin-right: 0;
+    }
+  
+    .list li {
+        margin-right: 10px;
+    }
+  
+    #main {
+        margin-left: 0;
+    }
+  
+    form {
+        padding: 20px;
+    }
+  
+    form input,
+    form select {
+        width: 100%;
+    }
+  }
+
+  .image-container {
+    text-align: center;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 30px;
+    background-color: rgb(0, 0, 0);
+    border-color: white;
+    border: #fafafa;
+    border-radius: 10px;
+    border: 5px;
+}
+
+.image-item {
+    width: 20%; /* Ajusta según sea necesario */
+    
+    margin-bottom: 20px; /* Espacio entre las imágenes */
+}
+
+.img-thumbnail {
+  color: black;
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  height: 200px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover; /* Ajusta el comportamiento de cómo se ajusta la imagen al tamaño especificado */
+  border-radius: 8px; /* Agrega bordes redondeados si lo deseas */
+}
+
+#carrito-container {
+  text-align: center;
+}
+
+.image-item {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.image-item img {
+  width: 150px; /* Ajusta el ancho de las imágenes según sea necesario */
+  height: 150px; /* Ajusta la altura de las imágenes según sea necesario */
+}
+.carrito-item {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Estilo para el contenedor de fila */
+.carrito-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.marg11{
+  background-color: #ac1d1d;
+  width: 250px;
+  height: 350px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+.marg11:hover{
+  background-color: #2d35d1; /* Cambia el color de fondo al pasar el cursor */
+      transform: scale(1.1); /* Escala el contenedor al 110% del tamaño original */
+      transition: left 0.3s;
+   
+}
+
+.marg22{
+  background-color: #ac1d1d;
+  width: 250px;
+  height: 350px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 50px;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+.marg22:hover{
+  background-color: #7f83db; /* Cambia el color de fondo al pasar el cursor */
+      transform: scale(1.1); /* Escala el contenedor al 110% del tamaño original */
+      transition: left 0.3s;
+   
+}
+
+/* Estilo para las imágenes en el carrito */
+.carrito-img {
+  width: 300px; /* Ajusta el tamaño según tus preferencias */
+  height: 300px; /* Ajusta el tamaño según tus preferencias */
+}

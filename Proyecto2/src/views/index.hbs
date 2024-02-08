@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto EGA && IHM && EGF</title>
+    <link rel="stylesheet" href="/css/Formu.css">
+    <div class="marv1">
+    <img src="" alt="marv">        
+    </div>
+</head>
+<body>
+    
+        <navbar>
+            <div class="navlist">
+                <div class="mylist">
+                    <ul class="list">    
+                        <li><img  class="imgcar2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Marvel-Comics-Logo.svg/2560px-Marvel-Comics-Logo.svg.png" alt="22"></li>
+                         <li><a class="anim1" href="#" onclick="INICIO()">Iniciar Sesion</a></li>
+                        <li><a class="anim1" href="#" onclick="displayFormOlv()">Olvide contraseña</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </navbar>
+    
+    
+    <main id="main">
+        <p>
+        <div class="contenedor22">
+            <img src="https://www.allcitycanvas.com/wp-content/uploads/2019/07/comics-de-marvel-ahora-en-audiolibros-horizontal.jpg" alt="marv">
+        </div>
+        </p>
+        <br>
+        <section id="section-form">
+            
+            <!-- formulario de inicio de sesión --> 
+            
+            <form action="/login" method="POST" name="formIS" id="formIS" style="display: block;"> 
+                <div class="form-title">
+                    <h2>Inicio de Sesión</h2>        
+                </div>
+                <label for="username">
+                    <input type="text" placeholder="Usuario" name="username" pattern="[a-zA-Z]+" required>                
+                </label>
+                <label for="userpasswd">
+                    <input type="password" placeholder="Contraseña" name="userpasswd" pattern="[A-Za-z0-9!?-]{4,8}">                
+                </label>
+
+                <button class="boton" type="submit"  id="btn">Ingresar</button>
+
+            </form>  
+            
+            <form action="/correos" method="POST" id="formOlv" style="display: none;">            
+                <div class="form-title">
+                    <h2>Olvide contraseña</h2>
+                </div>
+                <label for="useremail">
+                    <input type="text" placeholder="Email" name="useremail">                
+                </label>
+
+                <button type="submit" id="btnnn" style="display: block;" >Enviar </button>  
+
+            </form> 
+            
+             
+        </section>
+    </main> 
+    <script src="/js/Formu.js"></script>
+</body>
+</html>
+

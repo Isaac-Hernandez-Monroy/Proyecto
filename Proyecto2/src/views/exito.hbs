@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/Formu.css">
+<navbar>
+            <div class="navlist">
+                <div class="mylist">
+                    <ul class="list">
+                        <li><a class="anim1" href="#" onclick="INICIO()">Iniciar Sesion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </navbar>
+<body>
+    <div class="contenedor-imagen">
+        <img src="css/ositogod.jpg" alt="osofeli">
+    </div>
+</body>
+    <p>
+        {{titulo}}
+    </p>
+    <p><div class="contenedor-texto">{{descripcion}}</div></p>
+    <p><div><button type="button" id="btnR1" class="btnsel"onclick="goBack()">
+        <script>
+            function goBack(){
+                window.history.back();
+            }
+        </script>{{boton}}</button> </div></p>
+<script src="/js/Formu.js"></script>

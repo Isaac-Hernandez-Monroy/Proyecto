@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Formu.css">
+</head>
+<body>
+<navbar>
+            <div class="navlist">
+                <div class="mylist">
+                    <ul class="list">
+                        <li><a class="anim1" href="#" onclick="INICIO()">Iniciar Sesion</a></li>
+                        <li><a class="anim1" href="#" onclick="CIERRA()">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </navbar>
+    <main id="main">
+        <section id="section-form">
+            <h2 class="coltxt1">{{title}}</h2>
+            <p class="coltxt1">{{ username }}</p>
+            <p class="coltxt1"> Seleccione el campo que desee editar</p>
+                <select class="btnsel1" id="useredit" name="useredit" onchange="eleccion()">
+                    <option value="username">Nombre de usuario</option>
+                    <option value="useremail">Correo electronico</option>
+                    <option value="userquestion">Pregunta secreta</option>
+                    <option value="useranswer">Respuesta a pregunta</option>
+                    <option value="userposition">Nivel de usuario</option>
+                </select>
+
+            <form action="/updateusern" method="POST" id="formnombre" style="display: none;">             
+                <p>Usuario: {{ username }}</p> 
+                <input type="hidden" name="username" value="{{ username }}">  
+                <label for="username2">
+                    <input type="text" placeholder="Nuevo nombre de usuario" name="username2">                
+                </label>
+                <button type="submit" id="btnnn">Enviar </button>  
+            </form>
+
+            <form action="/updateusere" method="POST" id="formcorreo" style="display: none;">             
+                <p>Usuario: {{ username }}</p>   
+                <input type="hidden" name="username" value="{{ username }}">
+                <label for="useremail">
+                    <input type="text" placeholder="Nuevo correo electronico" name="useremail">                
+                </label>
+                <button type="submit" id="btnnn1">Enviar </button>  
+            </form>
+
+            <form action="/updateuserq" method="POST" id="formpregunta" style="display: none;">             
+                <p>Usuario: {{ username }}</p>   
+                <input type="hidden" name="username" value="{{ username }}">
+                <label for="userquestion">
+                    <input type="text" placeholder="Nueva pregunta de seguridad" name="userquestion">                
+                </label>
+                <button type="submit" id="btnnn2">Enviar </button>  
+            </form>
+
+            <form action="/updateusera" method="POST" id="formrespuesta" style="display: none;">             
+                <p>Usuario: {{ username }}</p>   
+                <input type="hidden" name="username" value="{{ username }}">
+                <label for="useranswer">
+                    <input type="password" placeholder="Nueva respuesta" name="useranswer">                
+                </label>
+                <button type="submit" id="btnnn3">Enviar </button>  
+            </form>
+
+            <form action="/updateuserp" method="POST" id="formnivel" style="display: none;">             
+                <p>Usuario: {{ username }}</p>   
+                <input type="hidden" name="username" value="{{ username }}">
+                <select id="userposition" name="userposition">
+                    <option value="0">Operativo</option>
+                    <option value="1">Admin</option>
+                </select>
+                <button type="submit" id="btnnn4">Enviar </button>  
+            </form>
+            <p><div><button class="boton" type="button" id="btnR1" class="btnsel"onclick="goBack()">
+        <script>
+            function goBack(){
+                window.history.back();
+            }
+        </script>Regresar</button> </div></p>
+        </section>
+    </main> 
+    <script src="/js/Formu.js"></script>
+</body>
+</html>

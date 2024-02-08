@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/Formu.css">
+</head>
+<body>
+    <h1 id="title-table">{{title}}</h1>
+    
+    <navbar>
+        <div class="navlist">
+            <div class="mylist">
+                <ul class="list">
+                    <li><a class="anim1" href="#" onclick="BUSQUEDA()">Seguir eligiendo</a></li>
+                    <li><a class="anim1" href="#" onclick="CIERRA()">Cerrar Sesión</a></li>
+                    <li><a class="anim1" href="#" onclick="CARGA()">Cargar carrito</a></li>
+                    <li><a class="anim1" href="#" onclick="enviarDatosAlServidor()">Confirmar carrito</a></li>
+                </ul>
+            </div>
+        </div>
+    </navbar>
+
+    <!-- Contenedor para mostrar el carrito -->
+
+
+<div  class="image-container" class="marg1" class="coltxt1" class="form" id="carrito-container">
+        {{#each list}}
+            <div  class="marg11" class="coltxt1">
+                <p class="coltxt11" class="form">{{name}}</p>
+                <a class="coltxt1" >
+                    <img src="{{thumbnail}}" alt="{{name}}" class="img-thumbnail">
+                </a>
+                <p>
+                <button > <img class="imgcar" src="https://static.vecteezy.com/system/resources/previews/000/643/145/non_2x/vector-shopping-cart-icon.jpg" alt="111"> </button>
+                </p>
+            </div>
+        {{/each}}
+    </div>
+
+
+
+    <script>
+        // Llama a la función para obtener y mostrar el carrito al cargar la página
+        window.onload = function() {
+            mostrarCarrito();
+        };
+    </script>
+
+    <script src="/js/Formu.js"></script>
+</body>
+</html>

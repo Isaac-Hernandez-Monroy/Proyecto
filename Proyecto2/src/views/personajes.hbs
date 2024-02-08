@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="coltxt">{{title}}</title>
+    <link rel="stylesheet" href="/css/Formu.css">
+</head>
+<body>
+    
+    <navbar>
+        <div class="navlist">
+            <div class="mylist">
+                <ul class="list">
+                    <li><a  href="#" onclick="CARRITO()"> <img class="imgcar" src="https://static.vecteezy.com/system/resources/previews/000/643/145/non_2x/vector-shopping-cart-icon.jpg" alt="111"> </a></li>
+                    <li><a class="anim1" href="#" onclick="CIERRA()">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </navbar>
+
+     <form class="marg1" action="/cargar" method="GET" name="formbus" id="formbus" style="display: block;">            
+                <div class="form-title">
+                    <h2>Escriba el personaje que busca</h2>
+                    
+                </div>
+                 <label for="charname">
+                    <input type="text" placeholder="Personaje" name="charname" pattern="[a-zA-Z]+" required>   
+                </label>
+                <button class="boton" type="submit" id="btnR0"  >Buscar</button> 
+                
+            </form>  
+
+    <div class="image-container" class="marg1" class="coltxt1" class="form">
+        {{#each list}}
+            <div  class="marg11" class="coltxt1">
+                <p class="coltxt11" class="form">{{name}}</p>
+                <a class="coltxt1" href="{{url}}" target="_blank">
+                    <img src="{{thumbnail}}" alt="{{name}}" class="img-thumbnail">
+                </a>
+                <p>
+                <a href="#" onclick="addToCart('{{name}}', '{{thumbnail}}')" > <img class="imgcar" src="https://static.vecteezy.com/system/resources/previews/000/643/145/non_2x/vector-shopping-cart-icon.jpg" alt="111"> </a>
+                </p>
+            </div>
+        {{/each}}
+    </div>
+
+    <script src="/js/Formu.js"></script>
+</body>
+</html>
